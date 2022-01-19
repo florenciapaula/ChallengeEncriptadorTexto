@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<!--MODIFICADO POR FLORENCIA MARTINEZ-->
+
+<html>
+
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Encriptador de texto - ORACLE</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
  
-  <h1 class="titulo"><img id="logo" src="images/logo.png"> CHALLENGE ORACLE ONE</h1>
+  <h1 class="titulo"> <img id="logo" src="images/logo.png"> Encriptador de texto - CHALLENGE ORACLE ONE </h1>
 
   <main class="main">
+
     <section class="form box">
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <label id="encabezado" for="input-texto">Solo letras minúsculas, sin acento</label>
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
         <input class="btn" type="submit" value="encriptar!" id="btn-encriptar" onClick="encriptar();">
         <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar" onClick="desencriptar();">
@@ -23,19 +32,21 @@
     </section>
   
     <section class="msg box">
-      <h2 id="">Mensaje encriptado:</h2>
+      <h2 id="encabezado">Mensaje:</h2>
       <input class="text-input" type="text" id="msg"></input>
       <input class="btn" type="submit" value="copiar" id="btn-copy" onClick="copiar();">
     </section>
 
   </main>
-  <footer>
-    
-    <p>desarrollado por Florencia Martinez</p>
-    <a href="mailto:florenciapaulamartinez@gmail.com">contact me</a>
-
-  </footer>
   
+<!--RODAPIE-->
+
+  <footer>   
+      <p>desarrollado por Florencia Martinez</p>
+      <a href="mailto:florenciapaulamartinez@gmail.com">contact me</a>
+  </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
